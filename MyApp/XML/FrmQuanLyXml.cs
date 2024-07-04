@@ -90,12 +90,12 @@ namespace XML130.XML
                 CheckFileExists = true,
                 CheckPathExists = true,
                 FileName = "Chọn file xml",
-                Title = "Tải dữ liệu Xml",
+                Title = "Tải dữ liệu XML130",
                 Filter = "XML Document (*.xml)|*.xml|All file (*.*)|*.*"
             };
             if (openFile.ShowDialog() == DialogResult.OK)
             {
-                EasyLoadWait.ShowWaitForm("Đang import", this);
+                EasyLoadWait.ShowWaitForm("Đang import dữ liệu XML130", this);
                 try
                 {
                     _dsXmlFile = XmlHelper.LoadXmlFile(openFile.FileName);
@@ -122,7 +122,7 @@ namespace XML130.XML
                 CheckFileExists = false,
                 CheckPathExists = false,
                 FileName = "Chọn thư mục",
-                Title = "Chọn thư mục chứa file xml cần import",
+                Title = "Chọn thư mục chứa dữ liệu XML130 cần import",
             };
             if (openFolder.ShowDialog() == DialogResult.OK)
             {

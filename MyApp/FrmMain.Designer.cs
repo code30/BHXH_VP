@@ -114,6 +114,8 @@
             this.btnDLCC_HCVaoRa = new DevExpress.XtraBars.BarButtonItem();
             this.btnDLCC_LogCC = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem13 = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTime)).BeginInit();
@@ -133,7 +135,6 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnDmDuLieu, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnDmDanhMuc, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem7),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem11, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem2)});
             this.bar.OptionsBar.AllowQuickCustomization = false;
             this.bar.OptionsBar.DisableCustomization = true;
@@ -224,8 +225,10 @@
             this.barSubItem13,
             this.barSubItem14,
             this.btnDLCC_HCVaoRa,
-            this.btnDLCC_LogCC});
-            this.barManager.MaxItemId = 134;
+            this.btnDLCC_LogCC,
+            this.barButtonItem4,
+            this.barButtonItem5});
+            this.barManager.MaxItemId = 136;
             this.barManager.StatusBar = this.bar1;
             // 
             // btnAdd
@@ -354,7 +357,7 @@
             // ltrPhienBan
             // 
             this.ltrPhienBan.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.ltrPhienBan.Caption = "Phiên bản: V23.10.26.02";
+            this.ltrPhienBan.Caption = "Phiên bản: V24.07.01.02";
             this.ltrPhienBan.Id = 26;
             this.ltrPhienBan.Name = "ltrPhienBan";
             // 
@@ -369,7 +372,7 @@
             // 
             // barStaticItem1
             // 
-            this.barStaticItem1.Caption = "Đơn vị sử dụng: QUẢN LÝ AN TOÀN VỆ SINH THỰC PHẨM (NHÀ BẾP CS1)";
+            this.barStaticItem1.Caption = "Đơn vị sử dụng: BỆNH VIỆN ĐA KHOA TỈNH VĨNH PHÚC";
             this.barStaticItem1.Id = 82;
             this.barStaticItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barStaticItem1.ImageOptions.SvgImage")));
             this.barStaticItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -801,13 +804,15 @@
             this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnMauBC1A),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnMauBC1B),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem23)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem23, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem5)});
             this.barSubItem2.Name = "barSubItem2";
             this.barSubItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // btnMauBC1A
             // 
-            this.btnMauBC1A.Caption = "Báo cáo 19";
+            this.btnMauBC1A.Caption = "Biểu 19 - Báo cáo sử dụng vật tư";
             this.btnMauBC1A.Id = 84;
             this.btnMauBC1A.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMauBC1A.ImageOptions.SvgImage")));
             this.btnMauBC1A.Name = "btnMauBC1A";
@@ -815,7 +820,7 @@
             // 
             // btnMauBC1B
             // 
-            this.btnMauBC1B.Caption = "Báo cáo 20";
+            this.btnMauBC1B.Caption = "Biểu 20 - Báo cáo sử dụng thuốc";
             this.btnMauBC1B.Id = 97;
             this.btnMauBC1B.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMauBC1B.ImageOptions.SvgImage")));
             this.btnMauBC1B.Name = "btnMauBC1B";
@@ -823,8 +828,9 @@
             // 
             // barButtonItem23
             // 
-            this.barButtonItem23.Caption = "Báo cáo 21";
+            this.barButtonItem23.Caption = "Biểu 21 - Báo cáo sử dụng dịch vu";
             this.barButtonItem23.Id = 124;
+            this.barButtonItem23.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem23.ImageOptions.SvgImage")));
             this.barButtonItem23.Name = "barButtonItem23";
             // 
             // btnSoXetNghiem
@@ -873,7 +879,7 @@
             // 
             // barSubItem7
             // 
-            this.barSubItem7.Caption = "Hồ sơ XML theo QĐ 130";
+            this.barSubItem7.Caption = "Hồ sơ XML130 (4750/QĐ-BYT)";
             this.barSubItem7.Id = 98;
             this.barSubItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSubItem7.ImageOptions.Image")));
             this.barSubItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barSubItem7.ImageOptions.LargeImage")));
@@ -885,7 +891,7 @@
             // 
             // btn_importXMLtoDB
             // 
-            this.btn_importXMLtoDB.Caption = "Nhập XML vào CSDL";
+            this.btn_importXMLtoDB.Caption = "Danh sách dữ liệu XML130";
             this.btn_importXMLtoDB.Id = 125;
             this.btn_importXMLtoDB.Name = "btn_importXMLtoDB";
             this.btn_importXMLtoDB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem24_ItemClick);
@@ -944,9 +950,6 @@
             this.barSubItem11.Caption = "Quản lý Chấm công";
             this.barSubItem11.Id = 127;
             this.barSubItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem11.ImageOptions.SvgImage")));
-            this.barSubItem11.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem12),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem14)});
             this.barSubItem11.Name = "barSubItem11";
             this.barSubItem11.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -954,8 +957,6 @@
             // 
             this.barSubItem12.Caption = "Danh mục chấm công";
             this.barSubItem12.Id = 129;
-            this.barSubItem12.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnChamCong_DmNhanVien)});
             this.barSubItem12.Name = "barSubItem12";
             // 
             // btnChamCong_DmNhanVien
@@ -969,9 +970,6 @@
             // 
             this.barSubItem14.Caption = "Dữ liệu chấm công";
             this.barSubItem14.Id = 131;
-            this.barSubItem14.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnDLCC_HCVaoRa),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnDLCC_LogCC)});
             this.barSubItem14.Name = "barSubItem14";
             // 
             // btnDLCC_HCVaoRa
@@ -993,6 +991,20 @@
             this.barSubItem13.Caption = "barSubItem13";
             this.barSubItem13.Id = 130;
             this.barSubItem13.Name = "barSubItem13";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Mẫu C79 - Bảng kê chi phí Ngoại trú";
+            this.barButtonItem4.Id = 134;
+            this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Mẫu C80 - Bảng kê chi phí Nội trú";
+            this.barButtonItem5.Id = 135;
+            this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
+            this.barButtonItem5.Name = "barButtonItem5";
             // 
             // FrmMain
             // 
@@ -1107,5 +1119,7 @@
         private DevExpress.XtraBars.BarButtonItem btnDLCC_HCVaoRa;
         private DevExpress.XtraBars.BarButtonItem btnDLCC_LogCC;
         private DevExpress.XtraBars.BarSubItem barSubItem13;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
     }
 }

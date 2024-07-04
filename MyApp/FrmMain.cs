@@ -919,63 +919,63 @@ namespace XML130
 
         private void btnDLCC_HCVaoRa_ItemClick(object sender, ItemClickEventArgs e)
         {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                f = new FrmChamCong_DLCC_HCVaoRa();
-                f.Name = "FrmChamCongKhuonMat";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.DLCC_HanhChinh_Vao_Ra;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
+            //string typeName;
+            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
+            //Form f = GetMdiFormByName(typeName);
+            //if (f != null)
+            //    f.BringToFront();
+            //else
+            //{
+            //    EasyLoadWait.ShowWaitForm();
+            //    f = new FrmChamCong_DLCC_HCVaoRa();
+            //    f.Name = "FrmChamCongKhuonMat";
+            //    e.Item.Tag = f.Name;
+            //    f.Text = EasyMessageGlobal.DLCC_HanhChinh_Vao_Ra;
+            //    f.MdiParent = this;
+            //    f.Show();
+            //    EasyLoadWait.CloseWaitForm();
+            //}
         }
 
         private void btnDLCC_LogCC_ItemClick(object sender, ItemClickEventArgs e)
         {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                f = new FrmChamCong_DLCC_LichSuChamCong();
-                f.Name = "FrmChamCongKhuonMat_DataLog";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.DLCC_LogChamCong;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
+            //string typeName;
+            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
+            //Form f = GetMdiFormByName(typeName);
+            //if (f != null)
+            //    f.BringToFront();
+            //else
+            //{
+            //    EasyLoadWait.ShowWaitForm();
+            //    f = new FrmChamCong_DLCC_LichSuChamCong();
+            //    f.Name = "FrmChamCongKhuonMat_DataLog";
+            //    e.Item.Tag = f.Name;
+            //    f.Text = EasyMessageGlobal.DLCC_LogChamCong;
+            //    f.MdiParent = this;
+            //    f.Show();
+            //    EasyLoadWait.CloseWaitForm();
+            //}
 
         }
 
         private void btnChamCong_DmNhanVien_ItemClick(object sender, ItemClickEventArgs e)
         {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                f = new FrmChamCong_DmNhanVien();
-                f.Name = "FrmChamCong_DmNhanVien";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.DLCC_LogChamCong;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
+            //string typeName;
+            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
+            //Form f = GetMdiFormByName(typeName);
+            //if (f != null)
+            //    f.BringToFront();
+            //else
+            //{
+            //    EasyLoadWait.ShowWaitForm();
+            //    //f = new FrmChamCong_DmNhanVien();
+            //    f.Name = "FrmChamCong_DmNhanVien";
+            //    e.Item.Tag = f.Name;
+            //    f.Text = EasyMessageGlobal.DLCC_LogChamCong;
+            //    f.MdiParent = this;
+            //    f.Show();
+            //    EasyLoadWait.CloseWaitForm();
+            //}
         }
     }
 }
