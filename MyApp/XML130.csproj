@@ -246,6 +246,12 @@
     <Compile Include="Func\FrmDmQD130_QuocTich.designer.cs">
       <DependentUpon>FrmDmQD130_QuocTich.cs</DependentUpon>
     </Compile>
+    <Compile Include="Func\FrmGDBHXH_DSDeNghiThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func\FrmGDBHXH_DSDeNghiThanhToan.designer.cs">
+      <DependentUpon>FrmGDBHXH_DSDeNghiThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Func\FrmKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -423,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Func\FrmDmQD130_QuocTich.resx">
       <DependentUpon>FrmDmQD130_QuocTich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func\FrmGDBHXH_DSDeNghiThanhToan.resx">
+      <DependentUpon>FrmGDBHXH_DSDeNghiThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Func\FrmKy.resx">
       <DependentUpon>FrmKy.cs</DependentUpon>

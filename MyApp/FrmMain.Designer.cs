@@ -93,6 +93,8 @@
             this.btnMauBC1A = new DevExpress.XtraBars.BarButtonItem();
             this.btnMauBC1B = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.btnSoXetNghiem = new DevExpress.XtraBars.BarButtonItem();
             this.btnMauBC3 = new DevExpress.XtraBars.BarButtonItem();
             this.btnMauBC4 = new DevExpress.XtraBars.BarButtonItem();
@@ -101,7 +103,7 @@
             this.barSubItem4 = new DevExpress.XtraBars.BarSubItem();
             this.barSubItem7 = new DevExpress.XtraBars.BarSubItem();
             this.btn_importXMLtoDB = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDsDeNghiThanhToan = new DevExpress.XtraBars.BarButtonItem();
             this.btnBuoc1A = new DevExpress.XtraBars.BarButtonItem();
             this.btnBuoc1B = new DevExpress.XtraBars.BarButtonItem();
             this.btnBuoc2 = new DevExpress.XtraBars.BarButtonItem();
@@ -114,8 +116,6 @@
             this.btnDLCC_HCVaoRa = new DevExpress.XtraBars.BarButtonItem();
             this.btnDLCC_LogCC = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem13 = new DevExpress.XtraBars.BarSubItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTime)).BeginInit();
@@ -218,7 +218,7 @@
             this.btnDmQD130_PhuongPhapVoCam,
             this.barButtonItem23,
             this.btn_importXMLtoDB,
-            this.barButtonItem25,
+            this.btnDsDeNghiThanhToan,
             this.barSubItem11,
             this.btnChamCong_DmNhanVien,
             this.barSubItem12,
@@ -833,6 +833,20 @@
             this.barButtonItem23.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem23.ImageOptions.SvgImage")));
             this.barButtonItem23.Name = "barButtonItem23";
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Mẫu C79 - Bảng kê chi phí Ngoại trú";
+            this.barButtonItem4.Id = 134;
+            this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Mẫu C80 - Bảng kê chi phí Nội trú";
+            this.barButtonItem5.Id = 135;
+            this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
             // btnSoXetNghiem
             // 
             this.btnSoXetNghiem.Caption = "Mẫu số 2: Kiểm tra khi chế biến thức ăn";
@@ -885,7 +899,7 @@
             this.barSubItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barSubItem7.ImageOptions.LargeImage")));
             this.barSubItem7.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_importXMLtoDB),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem25)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnDsDeNghiThanhToan)});
             this.barSubItem7.Name = "barSubItem7";
             this.barSubItem7.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -896,11 +910,12 @@
             this.btn_importXMLtoDB.Name = "btn_importXMLtoDB";
             this.btn_importXMLtoDB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem24_ItemClick);
             // 
-            // barButtonItem25
+            // btnDsDeNghiThanhToan
             // 
-            this.barButtonItem25.Caption = "barButtonItem25";
-            this.barButtonItem25.Id = 126;
-            this.barButtonItem25.Name = "barButtonItem25";
+            this.btnDsDeNghiThanhToan.Caption = "Danh sách đề nghị thanh toán";
+            this.btnDsDeNghiThanhToan.Id = 126;
+            this.btnDsDeNghiThanhToan.Name = "btnDsDeNghiThanhToan";
+            this.btnDsDeNghiThanhToan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDsDeNghiThanhToan_ItemClick);
             // 
             // btnBuoc1A
             // 
@@ -991,20 +1006,6 @@
             this.barSubItem13.Caption = "barSubItem13";
             this.barSubItem13.Id = 130;
             this.barSubItem13.Name = "barSubItem13";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Mẫu C79 - Bảng kê chi phí Ngoại trú";
-            this.barButtonItem4.Id = 134;
-            this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "Mẫu C80 - Bảng kê chi phí Nội trú";
-            this.barButtonItem5.Id = 135;
-            this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
-            this.barButtonItem5.Name = "barButtonItem5";
             // 
             // FrmMain
             // 
@@ -1111,7 +1112,7 @@
         private DevExpress.XtraBars.BarButtonItem btnDmQD130_PhuongPhapVoCam;
         private DevExpress.XtraBars.BarButtonItem barButtonItem23;
         private DevExpress.XtraBars.BarButtonItem btn_importXMLtoDB;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem25;
+        private DevExpress.XtraBars.BarButtonItem btnDsDeNghiThanhToan;
         private DevExpress.XtraBars.BarSubItem barSubItem11;
         private DevExpress.XtraBars.BarSubItem barSubItem12;
         private DevExpress.XtraBars.BarButtonItem btnChamCong_DmNhanVien;

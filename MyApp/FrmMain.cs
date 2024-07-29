@@ -977,5 +977,26 @@ namespace XML130
             //    EasyLoadWait.CloseWaitForm();
             //}
         }
+
+        private void btnDsDeNghiThanhToan_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //FrmGDBHXH_DSDeNghiThanhToan
+            string typeName;
+            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
+            Form f = GetMdiFormByName(typeName);
+            if (f != null)
+                f.BringToFront();
+            else
+            {
+                EasyLoadWait.ShowWaitForm();
+                f = new FrmGDBHXH_DSDeNghiThanhToan();
+                f.Name = "FrmGDBHXH_DSDeNghiThanhToan";
+                e.Item.Tag = f.Name;
+                f.Text = EasyMessageGlobal.DLCC_LogChamCong;
+                f.MdiParent = this;
+                f.Show();
+                EasyLoadWait.CloseWaitForm();
+            }
+        }
     }
 }

@@ -478,3 +478,4 @@ D:\Working\repos\MyDev\10.XML130\BHXH_VP\MyApp\bin\Debug\ja\DevExpress.Diagram.v
 D:\Working\repos\MyDev\10.XML130\BHXH_VP\MyApp\bin\Debug\ru\DevExpress.Diagram.v20.1.Core.resources.dll
 D:\Working\repos\MyDev\10.XML130\BHXH_VP\MyApp\obj\Debug\XML130.csproj.CopyComplete
 D:\Working\repos\MyDev\10.XML130\BHXH_VP\MyApp\obj\Debug\XML130.csproj.AssemblyReference.cache
+D:\Working\repos\MyDev\10.XML130\BHXH_VP\MyApp\obj\Debug\XML130.Func.FrmGDBHXH_DSDeNghiThanhToan.resources

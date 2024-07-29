@@ -279,6 +279,81 @@ namespace XML130.XML
                                             break;
                                         }
                                     #endregion
+
+                                    #region XML3
+                                    case "305001":
+                                    case "308001":
+                                        {
+                                            // Trường hợp nếu mã nhóm = 10 thì không ghi lỗi này
+                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 10 != maNhom)
+                                            {
+                                                lstRowErrors.Remove(error);
+                                            }
+                                            break;
+                                        }
+
+                                    case "303001": // 303001: MA_DICH_VU không được để trống
+                                    case "309001": // 309001: TEN_DICH_VU không được để trống
+                                        {
+                                            
+                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 10 == maNhom) // nếu MA_NHOM=10 --> MA_DICH_VU && TEN_DICH_VU: được để trống
+                                            {
+                                                lstRowErrors.Remove(error);
+                                            }
+                                            break;
+                                        }
+
+                                    case "316001": // 316001: TT_THAU không được để trống  --> chưa đc ?
+                                        {
+
+                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 1== maNhom) // nếu MA_NHOM!=10 --> TT_THAU: được để trống
+                                            {
+                                                lstRowErrors.Remove(error);
+                                            }
+                                            break;
+                                        }
+
+                                    case "334001": // 334001: NGUOI_THUC_HIEN không được để trống khi mã nhóm bằng 1 2 3 8 18
+                                        {
+
+                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 10 == maNhom) // nếu MA_NHOM=10 --> NGUOI_THUC_HIEN: được để trống
+                                            {
+                                                lstRowErrors.Remove(error);
+                                            }
+                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom2) && 13 == maNhom2) // nếu MA_NHOM=13 --> NGUOI_THUC_HIEN: được để trống
+                                            {
+                                                lstRowErrors.Remove(error);
+                                            }
+
+                                            break;
+                                        }
+                                    
+
+                                    case "337001": // 337001: NGAY_TH_YL không được để trống khi mã nhóm bằng 1 2 3 8 18  --> không dc?
+                                        {
+
+                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 10 == maNhom) // nếu MA_NHOM=10 --> NGAY_TH_YL: được để trống
+                                            {
+                                                lstRowErrors.Remove(error);
+                                            }
+                                            break;
+                                        }
+
+                                    case "332001": // 332001  MA_GIUONG không đúng định dạng
+                                        {
+
+                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 15 != maNhom) // nếu MA_NHOM!=15 --> MA_GIUONG: được để trống
+                                            {
+                                                lstRowErrors.Remove(error);
+                                            }
+                                            break;
+                                        }
+
+
+
+
+
+                                    #endregion
                                     default:
                                         break;
                                 }
@@ -779,8 +854,11 @@ namespace XML130.XML
                     writerXml.WriteStartElement(rowName);
                     foreach (DataColumn col in dtXmlType.Columns)
                     {
-                        string value = drXmlType[col].ToString();
-                        writerXml.WriteElementString(col.ColumnName, value);
+                        if (!col.ColumnName.EndsWith("_Id") && col.ColumnName != "MA_LOI" && col.ColumnName != "THONGTIN_LOI") // bỏ _Id
+                        {
+                            string value = drXmlType[col].ToString();
+                            writerXml.WriteElementString(col.ColumnName, value);
+                        }
                     }
                     writerXml.WriteEndElement();
                 }
