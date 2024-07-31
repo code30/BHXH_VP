@@ -30,7 +30,7 @@ namespace XML130.Func
         {
             try
             {
-                DataTable dataTable = SQLHelper.ExecuteDataTable(string.Format("SELECT * FROM tblDmCSKCB_DichVuKyThuat"));
+                DataTable dataTable = SQLHelper.ExecuteDataTable(string.Format("SELECT * FROM tblDmCSKCB_KhoaPhong"));
                 customGridControl.DataSource = dataTable;
 
                 EasyCommon.BestFitColumnsGridView(customGridView);

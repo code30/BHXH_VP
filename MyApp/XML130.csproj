@@ -186,6 +186,24 @@
     <Compile Include="Func\FrmDmCSKCB_VatTu.designer.cs">
       <DependentUpon>FrmDmCSKCB_VatTu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Func\FrmDmDC_ICD10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func\FrmDmDC_ICD10.designer.cs">
+      <DependentUpon>FrmDmDC_ICD10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func\FrmDmDC_ICD9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func\FrmDmDC_ICD9.designer.cs">
+      <DependentUpon>FrmDmDC_ICD9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func\FrmDmDC_ICD_YHCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func\FrmDmDC_ICD_YHCT.designer.cs">
+      <DependentUpon>FrmDmDC_ICD_YHCT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Func\FrmDmQD130_DoiTuongKCB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -399,6 +417,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Func\FrmDmCSKCB_VatTu.resx">
       <DependentUpon>FrmDmCSKCB_VatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func\FrmDmDC_ICD10.resx">
+      <DependentUpon>FrmDmDC_ICD10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func\FrmDmDC_ICD9.resx">
+      <DependentUpon>FrmDmDC_ICD9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func\FrmDmDC_ICD_YHCT.resx">
+      <DependentUpon>FrmDmDC_ICD_YHCT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Func\FrmDmQD130_DoiTuongKCB.resx">
       <DependentUpon>FrmDmQD130_DoiTuongKCB.cs</DependentUpon>

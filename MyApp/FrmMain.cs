@@ -47,7 +47,7 @@ namespace XML130
             {
                 CloseMdiForm();
                 btnDmTaiKhoan.Visibility = BarItemVisibility.Always;
-                btnDmTaiKhoan.Caption = @"Xin chào: " + EasyUser.FullName;
+                //btnDmTaiKhoan.Caption = @"Xin chào: " + EasyUser.FullName;
                 Text = EasyMessageGlobal.MainTitle;
                 ltrServer.Visibility = BarItemVisibility.Always;
                 ltrDatabase.Visibility = BarItemVisibility.Always;
@@ -94,25 +94,6 @@ namespace XML130
             f.ShowDialog();
         }
 
-        private void btnLoaiDV_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //string typeName;
-            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            //Form f = GetMdiFormByName(typeName);
-            //if (f != null)
-            //    f.BringToFront();
-            //else
-            //{
-            //    EasyLoadWait.ShowWaitForm();
-            //    f = new FrmLoaiDV();
-            //    f.Name = "FrmLoaiDV";
-            //    e.Item.Tag = f.Name;
-            //    f.Text = EasyMessageGlobal.LoaiDVTitle;
-            //    f.MdiParent = this;
-            //    f.Show();
-            //    EasyLoadWait.CloseWaitForm();
-            //}
-        }
 
         private void btnConnection_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -134,114 +115,18 @@ namespace XML130
             
         }
 
-        private void btnDmNCC_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                f = new FrmNCC();
-                f.Name = "FrmNCC";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.DmNCCTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
+
 
         private void btnXn_ItemClick(object sender, ItemClickEventArgs e)
         {
 
         }
 
-        private void btnThongSoXn_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmXetNghiemMap();
-                f.Name = "FrmXetNghiemMap";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.TsXnTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
 
-        private void btnBenhNhan_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmBenhNhan();
-                f.Name = "FrmBenhNhan";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.BnTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        private void btnChiDinh_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmChiDinhDv();
-                f.Name = "FrmChiDinhXn";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.ChiDinhTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
 
         private void btnDsBacSy_ItemClick(object sender, ItemClickEventArgs e)
         {
 
-        }
-
-        private void btnThietBi_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmThietBi();
-                f.Name = "FrmThietBi";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.TbTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
         }
 
         private void btnKy_ItemClick(object sender, ItemClickEventArgs e)
@@ -249,156 +134,7 @@ namespace XML130
             EasyDialog.OpenDialog<FrmKy>();
         }
 
-        private void btnChiDinhHa_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmChiDinhDHA();
-                f.Name = "FrmChiDinhDHA";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.ChiDinhHATitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
 
-        // báo cáo - thống kê: mẫu 1A
-        //private void btnDanhThuXN_ItemClick(object sender, ItemClickEventArgs e)
-        //{
-            
-        //}
-
-        private void btnMauBC1A_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //string typeName;
-            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            //Form f = GetMdiFormByName(typeName);
-            //if (f != null)
-            //    f.BringToFront();
-            //else
-            //{
-            //    EasyLoadWait.ShowWaitForm();
-            //    //f = new FrmBCMau1A();
-            //    f.Name = "FrmBCMau1A";
-            //    e.Item.Tag = f.Name;
-            //    f.Text = EasyMessageGlobal.FrmBCMau1ATitle;
-            //    f.MdiParent = this;
-            //    f.Show();
-            //    EasyLoadWait.CloseWaitForm();
-            //}
-        }
-
-        // báo cáo - thống kê: mẫu 1B
-        private void btnMauBC1B_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmBCMau1B();
-                f.Name = "FrmBCMau1B";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmBCMau1BTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // báo cáo - thống kê: mẫu 2
-        private void btnSoXetNghiem_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmBCMau2();
-                f.Name = "FrmBCMau2";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmBCMau2Title;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // báo cáo - thống kê: mẫu 3
-        private void btnMauBC3_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmBCMau3();
-                f.Name = "FrmBCMau3";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmBCMau3Title;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // báo cáo - thống kê: mẫu 4
-        private void btnMauBC4_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmBCMau4();
-                f.Name = "FrmBCMau4";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmBCMau4Title;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // báo cáo - thống kê: mẫu 5
-        private void btnMauBC5_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmBCMau5();
-                f.Name = "FrmBCMau5";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmBCMau5Title;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
 
         // danh mục món ăn
         private void btnDmMonAn_ItemClick(object sender, ItemClickEventArgs e)
@@ -409,170 +145,9 @@ namespace XML130
         // danh mục cơ sở kinh doanh
         private void btnDmCSKD_ItemClick(object sender, ItemClickEventArgs e)
         {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmDmCSKD();
-                f.Name = "FrmDmCSKD";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.DmCSKDTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
+
         }
 
-        // Danh mục thực phẩm đông lạnh
-        private void btnDmTPDL_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-               // f = new FrmDmTPDL();
-                f.Name = "FrmDmTPDL";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.DmTPDLTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // Quản lý nhập liệu bước 1A
-        private void btnBuoc1A_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmNLMau1A();
-                f.Name = "FrmNLMau1A";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmNLMau1ATitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // Quản lý nhập liệu bước 1B
-        private void btnBuoc1B_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-               // f = new FrmNLMau1B();
-                f.Name = "FrmNLMau1B";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmNLMau1BTitle;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // Quản lý nhập liệu bước 2
-        private void btnBuoc2_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmNLMau2();
-                f.Name = "FrmNLMau2";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmNLMau2Title;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // Quản lý nhập liệu bước 3
-        private void btnBuoc3_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmNLMau3();
-                f.Name = "FrmNLMau3";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmNLMau3Title;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // Quản lý nhập liệu bước 5
-        private void btnBuoc5_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string typeName;
-            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            Form f = GetMdiFormByName(typeName);
-            if (f != null)
-                f.BringToFront();
-            else
-            {
-                EasyLoadWait.ShowWaitForm();
-                //f = new FrmNLMau5();
-                f.Name = "FrmNLMau5";
-                e.Item.Tag = f.Name;
-                f.Text = EasyMessageGlobal.FrmNLMau5Title;
-                f.MdiParent = this;
-                f.Show();
-                EasyLoadWait.CloseWaitForm();
-            }
-        }
-
-        // Danh mục Lưu mẫu thức ăn
-        private void btnDmLuuMauTA_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //string typeName;
-            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            //Form f = GetMdiFormByName(typeName);
-            //if (f != null)
-            //    f.BringToFront();
-            //else
-            //{
-            //    EasyLoadWait.ShowWaitForm();
-            //   // f = new FrmDmMauTA();
-            //    f.Name = "FrmDmMauTA";
-            //    e.Item.Tag = f.Name;
-            //    f.Text = EasyMessageGlobal.DmMauTATitle;
-            //    f.MdiParent = this;
-            //    f.Show();
-            //    EasyLoadWait.CloseWaitForm();
-            //}
-        }
 
         private void btnDmQD130_DoiTuongKCB_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -917,66 +492,7 @@ namespace XML130
             }
         }
 
-        private void btnDLCC_HCVaoRa_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //string typeName;
-            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            //Form f = GetMdiFormByName(typeName);
-            //if (f != null)
-            //    f.BringToFront();
-            //else
-            //{
-            //    EasyLoadWait.ShowWaitForm();
-            //    f = new FrmChamCong_DLCC_HCVaoRa();
-            //    f.Name = "FrmChamCongKhuonMat";
-            //    e.Item.Tag = f.Name;
-            //    f.Text = EasyMessageGlobal.DLCC_HanhChinh_Vao_Ra;
-            //    f.MdiParent = this;
-            //    f.Show();
-            //    EasyLoadWait.CloseWaitForm();
-            //}
-        }
 
-        private void btnDLCC_LogCC_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //string typeName;
-            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            //Form f = GetMdiFormByName(typeName);
-            //if (f != null)
-            //    f.BringToFront();
-            //else
-            //{
-            //    EasyLoadWait.ShowWaitForm();
-            //    f = new FrmChamCong_DLCC_LichSuChamCong();
-            //    f.Name = "FrmChamCongKhuonMat_DataLog";
-            //    e.Item.Tag = f.Name;
-            //    f.Text = EasyMessageGlobal.DLCC_LogChamCong;
-            //    f.MdiParent = this;
-            //    f.Show();
-            //    EasyLoadWait.CloseWaitForm();
-            //}
-
-        }
-
-        private void btnChamCong_DmNhanVien_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //string typeName;
-            //typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
-            //Form f = GetMdiFormByName(typeName);
-            //if (f != null)
-            //    f.BringToFront();
-            //else
-            //{
-            //    EasyLoadWait.ShowWaitForm();
-            //    //f = new FrmChamCong_DmNhanVien();
-            //    f.Name = "FrmChamCong_DmNhanVien";
-            //    e.Item.Tag = f.Name;
-            //    f.Text = EasyMessageGlobal.DLCC_LogChamCong;
-            //    f.MdiParent = this;
-            //    f.Show();
-            //    EasyLoadWait.CloseWaitForm();
-            //}
-        }
 
         private void btnDsDeNghiThanhToan_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -993,6 +509,72 @@ namespace XML130
                 f.Name = "FrmGDBHXH_DSDeNghiThanhToan";
                 e.Item.Tag = f.Name;
                 f.Text = EasyMessageGlobal.DLCC_LogChamCong;
+                f.MdiParent = this;
+                f.Show();
+                EasyLoadWait.CloseWaitForm();
+            }
+        }
+
+        private void barButtonItem14_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnDmDC_ICD_YHCT_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            
+            string typeName;
+            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
+            Form f = GetMdiFormByName(typeName);
+            if (f != null)
+                f.BringToFront();
+            else
+            {
+                EasyLoadWait.ShowWaitForm();
+                f = new FrmDmDC_ICD_YHCT();
+                f.Name = "FrmDmDC_ICD_YHCT";
+                e.Item.Tag = f.Name;
+                f.Text = EasyMessageGlobal.DmDC_ICD_YHCT;
+                f.MdiParent = this;
+                f.Show();
+                EasyLoadWait.CloseWaitForm();
+            }
+        }
+
+        private void btnDmDC_ICD10_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            string typeName;
+            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
+            Form f = GetMdiFormByName(typeName);
+            if (f != null)
+                f.BringToFront();
+            else
+            {
+                EasyLoadWait.ShowWaitForm();
+                f = new FrmDmDC_ICD10();
+                f.Name = "FrmDmDC_ICD10";
+                e.Item.Tag = f.Name;
+                f.Text = EasyMessageGlobal.DmDC_ICD10;
+                f.MdiParent = this;
+                f.Show();
+                EasyLoadWait.CloseWaitForm();
+            }
+        }
+
+        private void btnDmDC_ICD9_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            string typeName;
+            typeName = e.Item.Tag == null ? string.Empty : e.Item.Tag.ToString();
+            Form f = GetMdiFormByName(typeName);
+            if (f != null)
+                f.BringToFront();
+            else
+            {
+                EasyLoadWait.ShowWaitForm();
+                f = new FrmDmDC_ICD9();
+                f.Name = "FrmDmDC_ICD9";
+                e.Item.Tag = f.Name;
+                f.Text = EasyMessageGlobal.DmDC_ICD9;
                 f.MdiParent = this;
                 f.Show();
                 EasyLoadWait.CloseWaitForm();
