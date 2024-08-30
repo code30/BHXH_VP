@@ -463,125 +463,7 @@ namespace XML130.XML
                                             }
                                             break;
                                         }
-
-                                        // chưa hiểu tại sao case nhiều luồng như vậy ? --> mới lọc được
-                                        //case "338001": // 338001	NGAY_KQ không được nhỏ hơn ngày thực hiện y lệnh
-                                        //    {                                            
-                                        //        int[] nhomDuocDeTrong = new int[] { 10, 13, 15 };
-                                        //        if (string.IsNullOrWhiteSpace(value))
-                                        //        {
-                                        //            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && nhomDuocDeTrong.Contains(maNhom)) //nếu MA_NHOM = { 10,13,15}-- > NGAY_KQ: được để trống
-                                        //            {
-                                        //                lstRowErrors.Remove(error);
-                                        //            }
-                                        //        }
-
-                                        //        else // NGAY_KQ không được nhỏ hơn ngày y lệnh
-                                        //        {
-                                        //            long.TryParse(value, out long ngayKQ);
-                                        //            long.TryParse(dr["NGAY_YL"].ToString(), out long ngayYL);
-                                        //            long.TryParse(dr["NGAY_TH_YL"].ToString(), out long ngayTHYL);
-                                        //            if (ngayKQ < ngayYL || ngayKQ < ngayTHYL)
-                                        //            {
-                                        //                lstRowErrors.Add(error);
-                                        //            }
-                                        //        }
-
-                                        //        break;
-
-                                        //    }
-
-                                        //case "338002": // 338002	NGAY_KQ không được nhỏ hơn ngày y lệnh
-                                        //    {
-                                        //        int[] nhomDuocDeTrong = new int[] { 10, 13, 15 };
-                                        //        if (string.IsNullOrWhiteSpace(value))
-                                        //        {
-                                        //            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && nhomDuocDeTrong.Contains(maNhom)) //nếu MA_NHOM = { 10,13,15}-- > NGAY_KQ: được để trống
-                                        //            {
-                                        //                lstRowErrors.Remove(error);
-                                        //            }
-                                        //        }
-
-                                        //        else // NGAY_KQ không được nhỏ hơn ngày y lệnh
-                                        //        {
-                                        //            long.TryParse(value, out long ngayKQ);
-                                        //            long.TryParse(dr["NGAY_YL"].ToString(), out long ngayYL);
-                                        //            long.TryParse(dr["NGAY_TH_YL"].ToString(), out long ngayTHYL);
-                                        //            if (ngayKQ < ngayYL || ngayKQ < ngayTHYL)
-                                        //            {
-                                        //                lstRowErrors.Add(error);
-                                        //            }
-                                        //        }
-
-                                        //        break;
-
-                                        //    }
-                                        //case "338003": // 338003	NGAY_KQ không được lơn hơn ngày ra viện
-                                        //    {
-                                        //        int[] nhomDuocDeTrong = new int[] { 10, 13, 15 };
-                                        //        if (string.IsNullOrWhiteSpace(value))
-                                        //        {
-                                        //            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && nhomDuocDeTrong.Contains(maNhom)) //nếu MA_NHOM = { 10,13,15}-- > NGAY_KQ: được để trống
-                                        //            {
-                                        //                lstRowErrors.Remove(error);
-                                        //            }
-                                        //        }
-
-                                        //        else // NGAY_KQ không được nhỏ hơn ngày y lệnh
-                                        //        {
-                                        //            long.TryParse(value, out long ngayKQ);
-                                        //            long.TryParse(dr["NGAY_YL"].ToString(), out long ngayYL);
-                                        //            long.TryParse(dr["NGAY_TH_YL"].ToString(), out long ngayTHYL);
-                                        //            if (ngayKQ < ngayYL || ngayKQ < ngayTHYL)
-                                        //            {
-                                        //                lstRowErrors.Add(error);
-                                        //            }
-                                        //        }
-
-                                        //        break;
-
-                                        //    }
-                                        //case "338004": // 338004	NGAY_KQ không được để trống
-                                        //    {
-
-                                        //        //if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 10 == maNhom) // nếu MA_NHOM=10 (vật tư) --> NGAY_KQ: được để trống
-                                        //        //{
-                                        //        //    lstRowErrors.Remove(error);
-                                        //        //}
-                                        //        //if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom2) && 13 == maNhom2) // nếu MA_NHOM=13 (khám bệnh) --> NGAY_KQ: được để trống
-                                        //        //{
-                                        //        //    lstRowErrors.Remove(error);
-                                        //        //}
-
-                                        //        //if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom3) && 15 == maNhom3) // nếu MA_NHOM=15 --> NGAY_KQ: được để trống
-                                        //        //{
-                                        //        //    lstRowErrors.Remove(error);
-                                        //        //}
-
-                                        //        //break;
-                                        //        int[] nhomDuocDeTrong = new int [] { 10,13,15};
-                                        //        if (string.IsNullOrWhiteSpace(value))
-                                        //        {
-                                        //            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && nhomDuocDeTrong.Contains(maNhom)) //nếu MA_NHOM = { 10,13,15}-- > NGAY_KQ: được để trống
-                                        //            {
-                                        //                lstRowErrors.Remove(error);
-                                        //            }
-                                        //        }
-
-                                        //        else // NGAY_KQ không được nhỏ hơn ngày y lệnh
-                                        //        {
-                                        //            long.TryParse(value, out long ngayKQ);
-                                        //            long.TryParse(dr["NGAY_YL"].ToString(), out long ngayYL);
-                                        //            long.TryParse(dr["NGAY_TH_YL"].ToString(), out long ngayTHYL);
-                                        //            if (ngayKQ < ngayYL || ngayKQ < ngayTHYL)
-                                        //            {
-                                        //                lstRowErrors.Add(error);
-                                        //            }
-                                        //        }
-
-                                        //        break;
-
-                                        //    }
+                                                                                
 
                                     /// NGAY_KQ không được nhỏ hơn ngày thực hiện y lệnh
                                     case "338001":
@@ -697,46 +579,66 @@ namespace XML130.XML
 
                                     case "342001": // 342001	MA_MAY không tồn tại trong danh mục
                                         {
+                                            int[] nhomDuocDeTrong = new int[] { 7, 10, 11, 12, 13, 14, 15, 16, 17 }; //MA_MAY: được để trống khi MA_NHOM= { 7 (máu), 10 (vật tư), 11 (vật tư), 12 (vận chuyển), 13 (khám bệnh),
+                                                                                                                     //14 (ngày giường ban ngày), 15 (ngày giường nội trú), 16 (ngày giường lưu), 17 (chế phẩm máu)}
+                                            if (string.IsNullOrWhiteSpace(value))
+                                            {
+                                                if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom)
+                                                    && nhomDuocDeTrong.Contains(maNhom))
+                                                {
+                                                    lstRowErrors.Remove(error);
+                                                }
+                                            }
+                                            break;
+                                           
+                                        }
 
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 7 == maNhom) // nếu MA_NHOM==7 (máu) --> MA_MAY: được để trống
+
+                                    #endregion
+
+                                    #region XML4
+
+                                    /// NGAY_KQ không đúng định dạng hoặc phải nhỏ hơn thời gian hiện tại
+                                    case "410002":
+                                        {
+
+                                            /// Lấy dữ liệu NGAY_RA từ XML1 và so sánh với NGAY_KQ
+                                            if (dsXmlFile.Tables.Contains("XML1"))
                                             {
-                                                lstRowErrors.Remove(error);
-                                            }
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom2) && 10 == maNhom2) // nếu MA_NHOM==10 (vật tư) --> MA_MAY: được để trống
-                                            {
-                                                lstRowErrors.Remove(error);
-                                            }
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom3) && 11 == maNhom3) // nếu MA_NHOM==11 (vật tư) --> MA_MAY: được để trống
-                                            {
-                                                lstRowErrors.Remove(error);
-                                            }
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom9) && 12 == maNhom9) // nếu MA_NHOM==12 (vận chuyển) --> MA_MAY: được để trống
-                                            {
-                                                lstRowErrors.Remove(error);
-                                            }
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom4) && 13 == maNhom4) // nếu MA_NHOM==13 (khám bệnh) --> MA_MAY: được để trống
-                                            {
-                                                lstRowErrors.Remove(error);
+                                                foreach (DataRow drXml1 in dsXmlFile.Tables["XML1"].Rows)
+                                                {
+                                                    if (long.TryParse(drXml1["NGAY_RA"].ToString(), out long ngayRa)
+                                                            && long.TryParse(value, out long ngayKQ)
+                                                            && ngayKQ > ngayRa)
+                                                    {
+                                                            lstRowErrors.Add(error);
+                                                    }
+                                                }
                                             }
 
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom5) && 14 == maNhom5) // nếu MA_NHOM==14 (ngày giường ban ngày) --> MA_MAY: được để trống
-                                            {
-                                                lstRowErrors.Remove(error);
-                                            }
+                                            break;
+                                        }
 
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom6) && 15 == maNhom6) // nếu MA_NHOM==15 (ngày giường nội trú) --> MA_MAY: được để trống
-                                            {
-                                                lstRowErrors.Remove(error);
-                                            }
+                                    case "409001": // 409001	KET_LUAN không được để trống khi XML3 có MA_NHOM = 2
+                                        {
 
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom7) && 16 == maNhom7) // nếu MA_NHOM==16 (ngày giường lưu) --> MA_MAY: được để trống
-                                            {
-                                                lstRowErrors.Remove(error);
-                                            }
+                                            //if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom) && 2 != maNhom) // nếu MA_NHOM!=2 --> KET_LUAN: được để trống
+                                            //{
+                                            //    lstRowErrors.Remove(error);
+                                            //}
+                                            //break;
 
-                                            if (int.TryParse(dr["MA_NHOM"].ToString(), out int maNhom8) && 17 == maNhom8) // nếu MA_NHOM==17 (chế phẩm máu) --> MA_MAY: được để trống
+                                            /// Lấy dữ liệu MA_NHOM từ XML3 và so sánh với giá trị <> 2
+                                            if (dsXmlFile.Tables.Contains("XML3"))
                                             {
-                                                lstRowErrors.Remove(error);
+                                                foreach (DataRow drXml3 in dsXmlFile.Tables["XML3"].Rows)
+                                                {
+                                                    if (!int.TryParse(drXml3["MA_NHOM"].ToString(), out int maNhom)
+                                                            || 2 != maNhom )
+                                                    {
+                                                        lstRowErrors.Remove(error);
+                                                    }
+                                                }
                                             }
 
                                             break;
@@ -744,6 +646,25 @@ namespace XML130.XML
 
 
                                     #endregion
+
+                                    #region XML5
+
+                                    #endregion
+
+
+                                    #region XML7
+
+                                    #endregion
+
+
+                                    #region XML8
+
+                                    #endregion
+
+                                    #region XML9
+
+                                    #endregion
+
                                     default:
                                         break;
                                 }
