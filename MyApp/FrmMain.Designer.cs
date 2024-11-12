@@ -351,9 +351,7 @@
             this.bar1.DockRow = 0;
             this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
             this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.ltrServer),
             new DevExpress.XtraBars.LinkPersistInfo(this.ltrPhienBan),
-            new DevExpress.XtraBars.LinkPersistInfo(this.ltrDatabase),
             new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem1)});
             this.bar1.OptionsBar.AllowQuickCustomization = false;
             this.bar1.OptionsBar.DrawDragBorder = false;
@@ -372,7 +370,7 @@
             // ltrPhienBan
             // 
             this.ltrPhienBan.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.ltrPhienBan.Caption = "Phiên bản: V24.07.01.02";
+            this.ltrPhienBan.Caption = "Phiên bản nâng cấp (Version): 2024.10.24.03";
             this.ltrPhienBan.Id = 26;
             this.ltrPhienBan.Name = "ltrPhienBan";
             // 
@@ -549,7 +547,8 @@
             // 
             this.btnDmDanhMuc.Caption = "Quản lý danh mục";
             this.btnDmDanhMuc.Id = 70;
-            this.btnDmDanhMuc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDmDanhMuc.ImageOptions.SvgImage")));
+            this.btnDmDanhMuc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmDanhMuc.ImageOptions.Image")));
+            this.btnDmDanhMuc.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmDanhMuc.ImageOptions.LargeImage")));
             this.btnDmDanhMuc.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem10),
             new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem8),
@@ -560,6 +559,7 @@
             // 
             this.barSubItem10.Caption = "Danh mục dùng chung";
             this.barSubItem10.Id = 114;
+            this.barSubItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSubItem10.ImageOptions.Image")));
             this.barSubItem10.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnDmDC_ICD9, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDmDC_ICD10),
@@ -579,6 +579,7 @@
             // 
             this.barSubItem8.Caption = "Danh mục tại CSKCB";
             this.barSubItem8.Id = 104;
+            this.barSubItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSubItem8.ImageOptions.Image")));
             this.barSubItem8.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDmCSKCB_DichVuKyThuat),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDmCSKCB_Thuoc),
@@ -592,6 +593,8 @@
             // 
             this.btnDmCSKCB_DichVuKyThuat.Caption = "Danh mục dịch vụ kỹ thuật";
             this.btnDmCSKCB_DichVuKyThuat.Id = 110;
+            this.btnDmCSKCB_DichVuKyThuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_DichVuKyThuat.ImageOptions.Image")));
+            this.btnDmCSKCB_DichVuKyThuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_DichVuKyThuat.ImageOptions.LargeImage")));
             this.btnDmCSKCB_DichVuKyThuat.Name = "btnDmCSKCB_DichVuKyThuat";
             this.btnDmCSKCB_DichVuKyThuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmCSKCB_DichVuKyThuat_ItemClick);
             // 
@@ -599,6 +602,8 @@
             // 
             this.btnDmCSKCB_Thuoc.Caption = "Danh mục thuốc";
             this.btnDmCSKCB_Thuoc.Id = 111;
+            this.btnDmCSKCB_Thuoc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_Thuoc.ImageOptions.Image")));
+            this.btnDmCSKCB_Thuoc.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_Thuoc.ImageOptions.LargeImage")));
             this.btnDmCSKCB_Thuoc.Name = "btnDmCSKCB_Thuoc";
             this.btnDmCSKCB_Thuoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmCSKCB_Thuoc_ItemClick);
             // 
@@ -606,6 +611,8 @@
             // 
             this.btnDmCSKCB_VatTu.Caption = "Danh mục vật tư y tế";
             this.btnDmCSKCB_VatTu.Id = 112;
+            this.btnDmCSKCB_VatTu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_VatTu.ImageOptions.Image")));
+            this.btnDmCSKCB_VatTu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_VatTu.ImageOptions.LargeImage")));
             this.btnDmCSKCB_VatTu.Name = "btnDmCSKCB_VatTu";
             this.btnDmCSKCB_VatTu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmCSKCB_VatTu_ItemClick);
             // 
@@ -613,6 +620,8 @@
             // 
             this.btnDmCSKCB_NVYT.Caption = "Danh mục nhân viên";
             this.btnDmCSKCB_NVYT.Id = 113;
+            this.btnDmCSKCB_NVYT.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_NVYT.ImageOptions.Image")));
+            this.btnDmCSKCB_NVYT.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_NVYT.ImageOptions.LargeImage")));
             this.btnDmCSKCB_NVYT.Name = "btnDmCSKCB_NVYT";
             this.btnDmCSKCB_NVYT.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmCSKCB_NVYT_ItemClick);
             // 
@@ -620,6 +629,8 @@
             // 
             this.btnDmCSKCB_KhoaPhong.Caption = "Danh mục khoa phòng";
             this.btnDmCSKCB_KhoaPhong.Id = 116;
+            this.btnDmCSKCB_KhoaPhong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_KhoaPhong.ImageOptions.Image")));
+            this.btnDmCSKCB_KhoaPhong.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_KhoaPhong.ImageOptions.LargeImage")));
             this.btnDmCSKCB_KhoaPhong.Name = "btnDmCSKCB_KhoaPhong";
             this.btnDmCSKCB_KhoaPhong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmCSKCB_KhoaPhong_ItemClick);
             // 
@@ -627,6 +638,8 @@
             // 
             this.btnDmCSKCB_TTB.Caption = "Danh mục trang thiết bị";
             this.btnDmCSKCB_TTB.Id = 117;
+            this.btnDmCSKCB_TTB.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_TTB.ImageOptions.Image")));
+            this.btnDmCSKCB_TTB.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmCSKCB_TTB.ImageOptions.LargeImage")));
             this.btnDmCSKCB_TTB.Name = "btnDmCSKCB_TTB";
             this.btnDmCSKCB_TTB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmCSKCB_TTB_ItemClick);
             // 
@@ -634,6 +647,7 @@
             // 
             this.barSubItem9.Caption = "Danh mục theo QĐ 130";
             this.barSubItem9.Id = 105;
+            this.barSubItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSubItem9.ImageOptions.Image")));
             this.barSubItem9.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDmQD130_DoiTuongKCB),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDmQD130_QuocTich),
@@ -651,6 +665,8 @@
             // 
             this.btnDmQD130_DoiTuongKCB.Caption = "Danh mục đối tượng KCB";
             this.btnDmQD130_DoiTuongKCB.Id = 106;
+            this.btnDmQD130_DoiTuongKCB.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_DoiTuongKCB.ImageOptions.Image")));
+            this.btnDmQD130_DoiTuongKCB.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_DoiTuongKCB.ImageOptions.LargeImage")));
             this.btnDmQD130_DoiTuongKCB.Name = "btnDmQD130_DoiTuongKCB";
             this.btnDmQD130_DoiTuongKCB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_DoiTuongKCB_ItemClick);
             // 
@@ -658,6 +674,8 @@
             // 
             this.btnDmQD130_QuocTich.Caption = "Danh mục quốc tịch";
             this.btnDmQD130_QuocTich.Id = 107;
+            this.btnDmQD130_QuocTich.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_QuocTich.ImageOptions.Image")));
+            this.btnDmQD130_QuocTich.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_QuocTich.ImageOptions.LargeImage")));
             this.btnDmQD130_QuocTich.Name = "btnDmQD130_QuocTich";
             this.btnDmQD130_QuocTich.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_QuocTich_ItemClick);
             // 
@@ -665,6 +683,8 @@
             // 
             this.btnDmQD130_NgheNghiep.Caption = "Danh mục nghề nghiệp";
             this.btnDmQD130_NgheNghiep.Id = 108;
+            this.btnDmQD130_NgheNghiep.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_NgheNghiep.ImageOptions.Image")));
+            this.btnDmQD130_NgheNghiep.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_NgheNghiep.ImageOptions.LargeImage")));
             this.btnDmQD130_NgheNghiep.Name = "btnDmQD130_NgheNghiep";
             this.btnDmQD130_NgheNghiep.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_NgheNghiep_ItemClick);
             // 
@@ -672,6 +692,8 @@
             // 
             this.btnDmQD130_MaTaiNan.Caption = "Danh mục mã tai nạn";
             this.btnDmQD130_MaTaiNan.Id = 109;
+            this.btnDmQD130_MaTaiNan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_MaTaiNan.ImageOptions.Image")));
+            this.btnDmQD130_MaTaiNan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_MaTaiNan.ImageOptions.LargeImage")));
             this.btnDmQD130_MaTaiNan.Name = "btnDmQD130_MaTaiNan";
             this.btnDmQD130_MaTaiNan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_MaTaiNan_ItemClick);
             // 
@@ -679,6 +701,8 @@
             // 
             this.btnDmQD130_KetQuaDieuTri.Caption = "Danh mục kết quả điều trị";
             this.btnDmQD130_KetQuaDieuTri.Id = 118;
+            this.btnDmQD130_KetQuaDieuTri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_KetQuaDieuTri.ImageOptions.Image")));
+            this.btnDmQD130_KetQuaDieuTri.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_KetQuaDieuTri.ImageOptions.LargeImage")));
             this.btnDmQD130_KetQuaDieuTri.Name = "btnDmQD130_KetQuaDieuTri";
             this.btnDmQD130_KetQuaDieuTri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_KetQuaDieuTri_ItemClick);
             // 
@@ -686,6 +710,8 @@
             // 
             this.btnDmQD130_MaLoaiRaVien.Caption = "Danh mục mã loại ra viện";
             this.btnDmQD130_MaLoaiRaVien.Id = 119;
+            this.btnDmQD130_MaLoaiRaVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_MaLoaiRaVien.ImageOptions.Image")));
+            this.btnDmQD130_MaLoaiRaVien.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_MaLoaiRaVien.ImageOptions.LargeImage")));
             this.btnDmQD130_MaLoaiRaVien.Name = "btnDmQD130_MaLoaiRaVien";
             this.btnDmQD130_MaLoaiRaVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_MaLoaiRaVien_ItemClick);
             // 
@@ -693,6 +719,8 @@
             // 
             this.btnDmQD130_MaPhamViThanhToan.Caption = "Danh mục mã phạm vi thanh toán";
             this.btnDmQD130_MaPhamViThanhToan.Id = 120;
+            this.btnDmQD130_MaPhamViThanhToan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_MaPhamViThanhToan.ImageOptions.Image")));
+            this.btnDmQD130_MaPhamViThanhToan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_MaPhamViThanhToan.ImageOptions.LargeImage")));
             this.btnDmQD130_MaPhamViThanhToan.Name = "btnDmQD130_MaPhamViThanhToan";
             this.btnDmQD130_MaPhamViThanhToan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_MaPhamViThanhToan_ItemClick);
             // 
@@ -700,6 +728,8 @@
             // 
             this.btnDmQD130_MaPTTT.Caption = "Danh mục mã phương thức thanh toán";
             this.btnDmQD130_MaPTTT.Id = 121;
+            this.btnDmQD130_MaPTTT.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_MaPTTT.ImageOptions.Image")));
+            this.btnDmQD130_MaPTTT.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_MaPTTT.ImageOptions.LargeImage")));
             this.btnDmQD130_MaPTTT.Name = "btnDmQD130_MaPTTT";
             this.btnDmQD130_MaPTTT.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_MaPTTT_ItemClick);
             // 
@@ -707,6 +737,8 @@
             // 
             this.btnDmQD130_NguonThanhToan.Caption = "Danh mục nguồn thanh toán";
             this.btnDmQD130_NguonThanhToan.Id = 122;
+            this.btnDmQD130_NguonThanhToan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_NguonThanhToan.ImageOptions.Image")));
+            this.btnDmQD130_NguonThanhToan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_NguonThanhToan.ImageOptions.LargeImage")));
             this.btnDmQD130_NguonThanhToan.Name = "btnDmQD130_NguonThanhToan";
             this.btnDmQD130_NguonThanhToan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_NguonThanhToan_ItemClick);
             // 
@@ -714,6 +746,8 @@
             // 
             this.btnDmQD130_PhuongPhapVoCam.Caption = "Danh mục phương pháp vô cảm";
             this.btnDmQD130_PhuongPhapVoCam.Id = 123;
+            this.btnDmQD130_PhuongPhapVoCam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_PhuongPhapVoCam.ImageOptions.Image")));
+            this.btnDmQD130_PhuongPhapVoCam.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDmQD130_PhuongPhapVoCam.ImageOptions.LargeImage")));
             this.btnDmQD130_PhuongPhapVoCam.Name = "btnDmQD130_PhuongPhapVoCam";
             this.btnDmQD130_PhuongPhapVoCam.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDmQD130_PhuongPhapVoCam_ItemClick);
             // 

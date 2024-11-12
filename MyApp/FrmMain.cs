@@ -60,8 +60,8 @@ namespace XML130
                 
                 string server = connectionStringBuilder.DataSource;
                 string data = connectionStringBuilder.InitialCatalog;
-                ltrServer.Caption = "Máy chủ: " + server;
-                ltrDatabase.Caption = "CSDL: " + data;
+                //ltrServer.Caption = "Máy chủ: " + server;
+                //ltrDatabase.Caption = "CSDL: " + data;
             }
             else
                 Application.ExitThread();
